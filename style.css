@@ -1,0 +1,327 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.wrapper header {
+  width: 100%;
+  height: 66vh;
+  background: url("images/Mian_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper header nav {
+  width: 100vw;
+  min-height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper header nav #pageCountMobile {
+  width: 50%;
+  padding: 1rem;
+  text-align: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.wrapper header nav #pageCountMobile::-webkit-input-placeholder {
+  color: #ddd;
+  font-size: .8rem;
+}
+
+.wrapper header nav #pageCountMobile:-ms-input-placeholder {
+  color: #ddd;
+  font-size: .8rem;
+}
+
+.wrapper header nav #pageCountMobile::-ms-input-placeholder {
+  color: #ddd;
+  font-size: .8rem;
+}
+
+.wrapper header nav #pageCountMobile::placeholder {
+  color: #ddd;
+  font-size: .8rem;
+}
+
+.wrapper header nav .logo {
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin: 1rem 0rem;
+}
+
+.wrapper header nav .text {
+  font-size: .7rem;
+  line-height: 1.4rem;
+  width: 36ch;
+  opacity: .8;
+}
+
+.wrapper header nav article {
+  margin-top: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .4rem;
+  width: 60vw;
+  border-bottom: #fff solid 2px;
+}
+
+.wrapper header nav article input {
+  width: 90%;
+  padding: .4rem 1rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: .8rem;
+  text-transform: capitalize;
+}
+
+.wrapper header nav article input::-webkit-input-placeholder {
+  color: #ddd;
+}
+
+.wrapper header nav article input:-ms-input-placeholder {
+  color: #ddd;
+}
+
+.wrapper header nav article input::-ms-input-placeholder {
+  color: #ddd;
+}
+
+.wrapper header nav article input::placeholder {
+  color: #ddd;
+}
+
+.wrapper .topBtn {
+  background: transparent;
+  font-weight: 900;
+  font-size: .8rem;
+  height: 2rem;
+  padding: 1.4rem .4rem;
+  border: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper .topBtn img {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.wrapper #imagesContainer {
+  padding-top: 3rem;
+  max-width: 90vw;
+  margin: 0 auto;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper #imagesContainer img {
+  width: 300px;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.wrapper .lightbox {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: #000d;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  text-align: center;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .lightbox img {
+  width: 300px;
+}
+
+.wrapper .lightbox p {
+  color: #fff;
+  margin: 2rem 0rem;
+}
+
+.wrapper .shown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+blockquote {
+  display: none;
+  font-family: 'Bowlby One', cursive;
+  font-size: 2.6rem;
+  width: 7ch;
+}
+
+blockquote:first-letter {
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+}
+
+.mobile_only {
+  display: block;
+}
+
+.desktop_only {
+  display: none;
+}
+
+/*
+    ==== DESKTOP VIEW ====
+*/
+@media only screen and (min-width: 1000px) {
+  .desktop_only {
+    display: block;
+  }
+  .mobile_only {
+    display: none;
+  }
+  blockquote {
+    display: block;
+    color: #fff;
+  }
+  .wrapper header {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-bottom: 5rem;
+    height: 54vh;
+  }
+  .wrapper header nav {
+    width: 60vw;
+    min-height: 14rem;
+    margin: 0rem 6rem;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: inherit;
+    padding-bottom: 1rem;
+  }
+  .wrapper header nav .logo {
+    margin-top: 0rem;
+    font-size: 2rem;
+  }
+  .wrapper header nav .text {
+    font-size: 1rem;
+    width: 50ch;
+  }
+  .wrapper header nav article {
+    margin-top: 4rem;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .wrapper header nav article input {
+    font-size: 1rem;
+  }
+  .wrapper .lightbox img {
+    width: auto;
+  }
+  .wrapper .lightbox p {
+    color: #fff;
+    margin: 2rem 0rem;
+  }
+  .wrapper #imagesContainer {
+    padding-top: 3rem;
+    max-width: 80vw;
+  }
+  .wrapper #imagesContainer img {
+    width: 300px;
+  }
+  .wrapper .topBtn {
+    right: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
