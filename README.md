@@ -1,2 +1,2 @@
-# Flickr_Photo_Search
- Search images with flickr api
+# Flickr_photo_search
+ 
