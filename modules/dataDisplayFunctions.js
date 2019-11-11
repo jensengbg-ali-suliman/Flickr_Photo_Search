@@ -5,7 +5,7 @@ const lightboxDesc = document.querySelector('#lightboxDesc');
 
 function displayData(url, desc) {
 
-    let imgElement = `<img src="${url}" alt="${desc}"/>`;
+    let imgElement = `<img class="gridImg" src="${url}" alt="${desc}"/>`;
     imgDiv.innerHTML += imgElement;
     let imgTags = document.querySelectorAll('img');
     imgTags.forEach(img => img.addEventListener('click', e => lightboxView(e)));
