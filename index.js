@@ -36,7 +36,7 @@ async function getData() {
 
     text = userInput.value;
     imgPerPage = pageCount.value;
-    let url = `${baseUrl}&api_key=${key}&per_page=${imgPerPage}&page=${pageIndex}&tags=${text}&format=json&nojsoncallback=1`
+    let url = `${baseUrl}&api_key=${key}&per_page=${imgPerPage}&page=${pageIndex}&tags=${text}&format=json&nojsoncallback=1`;
 
     let response = await fetch(url, { method: 'GET' });
     let data = await response.json();
