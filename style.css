@@ -54,8 +54,7 @@ body {
 }
 
 .wrapper header nav #pageCountMobile {
-  width: 50%;
-  padding: 1rem;
+  padding: .8rem;
   text-align: center;
   background: transparent;
   border: none;
@@ -113,7 +112,7 @@ body {
 
 .wrapper header nav article input {
   width: 90%;
-  padding: .4rem 1rem;
+  padding: .8rem;
   background: transparent;
   border: none;
   outline: none;
@@ -301,6 +300,7 @@ blockquote:first-letter {
   }
   .wrapper header nav article {
     margin-top: 4rem;
+    padding: .5rem;
     width: 100%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
