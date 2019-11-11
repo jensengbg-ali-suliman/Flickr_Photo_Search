@@ -19,6 +19,7 @@ body {
 .wrapper header {
   width: 100%;
   height: 66vh;
+  padding: 0rem 4rem;
   background: url("images/Mian_background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -191,6 +192,7 @@ body {
 
 .wrapper #imagesContainer img {
   width: 300px;
+  height: 280px;
   margin: 1rem;
   cursor: pointer;
 }
@@ -218,12 +220,13 @@ body {
 }
 
 .wrapper .lightbox img {
-  width: 300px;
+  width: 86%;
 }
 
 .wrapper .lightbox p {
   color: #fff;
   margin: 2rem 0rem;
+  padding: 0rem 2rem;
 }
 
 .wrapper .shown {
@@ -314,6 +317,7 @@ blockquote:first-letter {
     margin: 2rem 0rem;
   }
   .wrapper #imagesContainer {
+    overflow-x: hidden;
     padding-top: 3rem;
     max-width: 80vw;
   }
@@ -322,6 +326,14 @@ blockquote:first-letter {
   }
   .wrapper .topBtn {
     right: 2rem;
+  }
+  .gridImg {
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  .gridImg:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 /*# sourceMappingURL=style.css.map */
