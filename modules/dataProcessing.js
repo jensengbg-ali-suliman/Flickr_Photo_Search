@@ -16,7 +16,7 @@ function processData(photo) {
     let secret = photo.secret;
     let description = photo.title;
 
-    let imgUrl = `https://farm${farm}.staticflickr.com/${server}/${id}_${secret}_c.jpg`;
+    let imgUrl = `https://farm${farm}.staticflickr.com/${server}/${id}_${secret}_b.jpg`;
 
     displayData(imgUrl, description);
 
